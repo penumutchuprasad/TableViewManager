@@ -2,7 +2,7 @@
 /*
  
  * LKStateManager
- * Created by: Leela Prasad on 14/11/18
+ * Created by: Leela Prasad on 16/11/18
  
  * Copyright © 2018 Leela Prasad. All rights reserved.
  * All rights have been granted for free of use for any project in SecNinjaz
@@ -11,31 +11,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class LKTVC: UITableViewController {
+  
   struct Profile {
     var name: String
   }
   
-  @IBOutlet weak var tabView: LKTableView!
-  
+  var tabView: LKTableView! {
+    
+    return (tableView as! LKTableView)
+  }
+
   var names = [Profile]()
   
-  private let cellId = "UITabCell"
+  private let cellId = "UITableViewCell"
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    
-    tabView.delegate = self
-    tabView.dataSource = self
     tabView.stateManagerDelegate = self
-   // tabView.setDatasource(names)
   }
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
     
+    tabView.frame = tableView.frame
+    tabView.bounds = tableView.frame
     self.names.removeAll()
     //self.tabView.reloadData()
   }
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
     simulateNetworkCall()
     
   }
-
+  
   func simulateNetworkCall() {
     
     tabView.setStateAs(.loading)
@@ -54,22 +55,22 @@ class ViewController: UIViewController {
     DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
       self.tabView.setStateAs(.error(NSError(domain: "Sample111 error", code: 555, userInfo: nil), #imageLiteral(resourceName: "info")))
     }
-
+    
     DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
       self.tabView.setStateAs(.loading)
     }
-
-    DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+    
+    DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
       self.tabView.setStateAs(.error(NSError(domain: "Sample222 error", code: 555, userInfo: nil), #imageLiteral(resourceName: "coin")))
     }
-
+    
     DispatchQueue.main.asyncAfter(deadline: .now() + 6) {
       self.tabView.setStateAs(.empty("Please wait for some time", #imageLiteral(resourceName: "plus")))
     }
     
     DispatchQueue.main.asyncAfter(deadline: .now() + 8) {
       for k in 0..<100 {
-        self.names.append(Profile(name: "NTR\(k)"))
+        self.names.append(Profile(name: "NBK\(k)"))
       }
       self.tabView.setStateAs(.populated)
     }
@@ -78,7 +79,8 @@ class ViewController: UIViewController {
   
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource, LKTableViewStateManagerDelegate {
+
+extension LKTVC: LKTableViewStateManagerDelegate {
   
   func tableViewDidSelectRetryButton(_ tableView: LKTableView, _ state: LKTableView.State) {
     
@@ -96,11 +98,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource, LKTableVie
     print("It goes back to the previous state as \(state.title)")
   }
   
-  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+  
+  override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return names.count
   }
   
-  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+  override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
     let cell = tabView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
     cell.textLabel?.text = names[indexPath.row].name

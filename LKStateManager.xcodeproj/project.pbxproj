@@ -7,14 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A730E8E219D5F0C0067B46B /* LKTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A730E8D219D5F0C0067B46B /* LKTableView.swift */; };
+		5A730E90219D63B50067B46B /* Enum Tut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A730E8F219D63B50067B46B /* Enum Tut.swift */; };
+		5A730E92219D8B270067B46B /* StateViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A730E91219D8B270067B46B /* StateViews.swift */; };
 		5A7D6EC0219C2F68001B407B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D6EBF219C2F68001B407B /* AppDelegate.swift */; };
 		5A7D6EC2219C2F68001B407B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D6EC1219C2F68001B407B /* ViewController.swift */; };
 		5A7D6EC5219C2F68001B407B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D6EC3219C2F68001B407B /* Main.storyboard */; };
 		5A7D6EC7219C2F71001B407B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D6EC6219C2F71001B407B /* Assets.xcassets */; };
 		5A7D6ECA219C2F71001B407B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D6EC8219C2F71001B407B /* LaunchScreen.storyboard */; };
+		5A8C0009219F0B93004DD997 /* LKTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C0008219F0B93004DD997 /* LKTVC.swift */; };
+		5B2490D321A4315C004AFA38 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2490D221A4315C004AFA38 /* NotificationCenter.framework */; };
+		5B2490D621A4315C004AFA38 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2490D521A4315C004AFA38 /* TodayViewController.swift */; };
+		5B2490D921A4315D004AFA38 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B2490D721A4315D004AFA38 /* MainInterface.storyboard */; };
+		5B2490DD21A4315D004AFA38 /* State Today.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5B2490D021A4315C004AFA38 /* State Today.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5B48BC0821A7054200841D84 /* LKKKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B48BC0721A7054200841D84 /* LKKKVC.swift */; };
+		5B4DB037219F3302005F3D9E /* UIWindow + Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4DB036219F3302005F3D9E /* UIWindow + Ext.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5B2490DB21A4315D004AFA38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5A7D6EB4219C2F68001B407B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B2490CF21A4315C004AFA38;
+			remoteInfo = "State Today";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5B2490E121A4315D004AFA38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5B2490DD21A4315D004AFA38 /* State Today.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5A730E8D219D5F0C0067B46B /* LKTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKTableView.swift; sourceTree = "<group>"; };
+		5A730E8F219D63B50067B46B /* Enum Tut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum Tut.swift"; sourceTree = "<group>"; };
+		5A730E91219D8B270067B46B /* StateViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViews.swift; sourceTree = "<group>"; };
 		5A7D6EBC219C2F68001B407B /* LKStateManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKStateManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7D6EBF219C2F68001B407B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A7D6EC1219C2F68001B407B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +59,14 @@
 		5A7D6EC6219C2F71001B407B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A7D6EC9219C2F71001B407B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7D6ECB219C2F71001B407B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8C0008219F0B93004DD997 /* LKTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKTVC.swift; sourceTree = "<group>"; };
+		5B2490D021A4315C004AFA38 /* State Today.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "State Today.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B2490D221A4315C004AFA38 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		5B2490D521A4315C004AFA38 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		5B2490D821A4315D004AFA38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5B2490DA21A4315D004AFA38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B48BC0721A7054200841D84 /* LKKKVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKKKVC.swift; sourceTree = "<group>"; };
+		5B4DB036219F3302005F3D9E /* UIWindow + Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow + Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,13 +77,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B2490CD21A4315C004AFA38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2490D321A4315C004AFA38 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5A730E8C219D5EB20067B46B /* StateManager */ = {
+			isa = PBXGroup;
+			children = (
+				5A730E8D219D5F0C0067B46B /* LKTableView.swift */,
+				5A730E91219D8B270067B46B /* StateViews.swift */,
+				5B4DB036219F3302005F3D9E /* UIWindow + Ext.swift */,
+			);
+			path = StateManager;
+			sourceTree = "<group>";
+		};
 		5A7D6EB3219C2F68001B407B = {
 			isa = PBXGroup;
 			children = (
 				5A7D6EBE219C2F68001B407B /* LKStateManager */,
+				5B2490D421A4315C004AFA38 /* State Today */,
+				5B2490D121A4315C004AFA38 /* Frameworks */,
 				5A7D6EBD219C2F68001B407B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				5A7D6EBC219C2F68001B407B /* LKStateManager.app */,
+				5B2490D021A4315C004AFA38 /* State Today.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +120,36 @@
 		5A7D6EBE219C2F68001B407B /* LKStateManager */ = {
 			isa = PBXGroup;
 			children = (
+				5A730E8C219D5EB20067B46B /* StateManager */,
 				5A7D6EBF219C2F68001B407B /* AppDelegate.swift */,
 				5A7D6EC1219C2F68001B407B /* ViewController.swift */,
+				5B48BC0721A7054200841D84 /* LKKKVC.swift */,
+				5A8C0008219F0B93004DD997 /* LKTVC.swift */,
+				5A730E8F219D63B50067B46B /* Enum Tut.swift */,
 				5A7D6EC3219C2F68001B407B /* Main.storyboard */,
 				5A7D6EC6219C2F71001B407B /* Assets.xcassets */,
 				5A7D6EC8219C2F71001B407B /* LaunchScreen.storyboard */,
 				5A7D6ECB219C2F71001B407B /* Info.plist */,
 			);
 			path = LKStateManager;
+			sourceTree = "<group>";
+		};
+		5B2490D121A4315C004AFA38 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B2490D221A4315C004AFA38 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B2490D421A4315C004AFA38 /* State Today */ = {
+			isa = PBXGroup;
+			children = (
+				5B2490D521A4315C004AFA38 /* TodayViewController.swift */,
+				5B2490D721A4315D004AFA38 /* MainInterface.storyboard */,
+				5B2490DA21A4315D004AFA38 /* Info.plist */,
+			);
+			path = "State Today";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +162,34 @@
 				5A7D6EB8219C2F68001B407B /* Sources */,
 				5A7D6EB9219C2F68001B407B /* Frameworks */,
 				5A7D6EBA219C2F68001B407B /* Resources */,
+				5B2490E121A4315D004AFA38 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5B2490DC21A4315D004AFA38 /* PBXTargetDependency */,
 			);
 			name = LKStateManager;
 			productName = LKStateManager;
 			productReference = 5A7D6EBC219C2F68001B407B /* LKStateManager.app */;
 			productType = "com.apple.product-type.application";
+		};
+		5B2490CF21A4315C004AFA38 /* State Today */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B2490E021A4315D004AFA38 /* Build configuration list for PBXNativeTarget "State Today" */;
+			buildPhases = (
+				5B2490CC21A4315C004AFA38 /* Sources */,
+				5B2490CD21A4315C004AFA38 /* Frameworks */,
+				5B2490CE21A4315C004AFA38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "State Today";
+			productName = "State Today";
+			productReference = 5B2490D021A4315C004AFA38 /* State Today.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -90,12 +197,15 @@
 		5A7D6EB4219C2F68001B407B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1000;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = SecNinjaz;
 				TargetAttributes = {
 					5A7D6EBB219C2F68001B407B = {
 						CreatedOnToolsVersion = 10.0;
+					};
+					5B2490CF21A4315C004AFA38 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -113,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				5A7D6EBB219C2F68001B407B /* LKStateManager */,
+				5B2490CF21A4315C004AFA38 /* State Today */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5B2490CE21A4315C004AFA38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2490D921A4315D004AFA38 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -136,11 +255,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7D6EC2219C2F68001B407B /* ViewController.swift in Sources */,
+				5A730E8E219D5F0C0067B46B /* LKTableView.swift in Sources */,
+				5A730E92219D8B270067B46B /* StateViews.swift in Sources */,
+				5A8C0009219F0B93004DD997 /* LKTVC.swift in Sources */,
 				5A7D6EC0219C2F68001B407B /* AppDelegate.swift in Sources */,
+				5B48BC0821A7054200841D84 /* LKKKVC.swift in Sources */,
+				5A730E90219D63B50067B46B /* Enum Tut.swift in Sources */,
+				5B4DB037219F3302005F3D9E /* UIWindow + Ext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B2490CC21A4315C004AFA38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B2490D621A4315C004AFA38 /* TodayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B2490DC21A4315D004AFA38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B2490CF21A4315C004AFA38 /* State Today */;
+			targetProxy = 5B2490DB21A4315D004AFA38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5A7D6EC3219C2F68001B407B /* Main.storyboard */ = {
@@ -157,6 +298,14 @@
 				5A7D6EC9219C2F71001B407B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5B2490D721A4315D004AFA38 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B2490D821A4315D004AFA38 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -281,8 +430,10 @@
 		5A7D6ECF219C2F71001B407B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LC376D52F;
 				INFOPLIST_FILE = LKStateManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,8 +449,10 @@
 		5A7D6ED0219C2F71001B407B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LC376D52F;
 				INFOPLIST_FILE = LKStateManager/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +460,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.secninjaz.www.LKStateManager;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5B2490DE21A4315D004AFA38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LC376D52F;
+				INFOPLIST_FILE = "State Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.secninjaz.www.LKStateManager.State-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B2490DF21A4315D004AFA38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5LC376D52F;
+				INFOPLIST_FILE = "State Today/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.secninjaz.www.LKStateManager.State-Today";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,6 +522,15 @@
 			buildConfigurations = (
 				5A7D6ECF219C2F71001B407B /* Debug */,
 				5A7D6ED0219C2F71001B407B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B2490E021A4315D004AFA38 /* Build configuration list for PBXNativeTarget "State Today" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B2490DE21A4315D004AFA38 /* Debug */,
+				5B2490DF21A4315D004AFA38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
